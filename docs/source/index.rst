@@ -1,8 +1,11 @@
+=======
 HiveApi
-===================================
+=======
 
+****************
 Getting Started:
 ****************
+
 .. toctree::
    :maxdepth: 2
    
@@ -14,8 +17,10 @@ Getting Started:
    getting-started/responses
    getting-started/conventions
 
+****************
 Core Components:
 ****************
+
 .. toctree::
    :maxdepth: 2
 
@@ -35,9 +40,12 @@ Core Components:
 
    components/views
 
+********************
 Optional Components:
 ********************
+
 .. toctree::
+   :caption: Optional Components
    :maxdepth: 2
 
    components/commands
@@ -54,9 +62,22 @@ Optional Components:
    components/seeders
    components/values
 
+*********
+Features:
+*********
+
+.. toctree::
+   :maxdepth: 2
+
+   features/etag
+
+
+*****
 Misc:
 *****
+
 .. toctree::
+   :caption: Misc
    :maxdepth: 2
 
    miscellaneous/magical-call
@@ -65,6 +86,4 @@ Misc:
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

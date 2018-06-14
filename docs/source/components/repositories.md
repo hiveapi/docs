@@ -108,7 +108,7 @@ Repository class, to instruct the querying on your model.
 	];
 ```
 
-### All other Properties
+#### All Other Properties
 
 HiveApi uses the `andersao/l5-repository` package, to provide a lot of powerful features to the repository class. To 
 learn more about all the properties you can use, visit the `andersao/l5-repository` package 

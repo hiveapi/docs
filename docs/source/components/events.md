@@ -75,7 +75,7 @@ class UserRegisteredEvent extends Event implements ShouldQueue
 You will get more benefits creating `Events Listeners` for each Event. To do this you will need to extend this 
 EventsProvider `HiveApi\Core\Abstracts\Providers\EventsProvider`.
 
-## Dispatch Events
+### Dispatch Events
 
 You can dispatch an Event from anywhere you want (ideally from `Actions` and `Tasks`). Consider the following example 
 for dispatching the Event class from the example above.
@@ -90,11 +90,11 @@ event(New UserEmailChangedEvent($user));
 \App::make(\Illuminate\Contracts\Bus\Dispatcher\Dispatcher::class)->dispatch(New UserEmailChangedEvent($user));
 ```
 
-## Queueing an Event
+### Queueing an Event
 
 Events can implement `Illuminate\Contracts\Queue\ShouldQueue` to be queued.
 
-## Handling an Event
+### Handling an Event
 
 You can handle jobs on dispatching an event. To do so you need to implement one of the following interfaces:
 
@@ -139,6 +139,6 @@ class ExampleEvent extends Event implements ShouldHandle
 }
 ```
 
-## Broadcasting
+### Broadcasting
 
 To define Broadcasting route go to `app/Ship/Boardcasts/Routes.php`.

@@ -16,7 +16,7 @@ More information can be found in the [official Laravel documentation](https://la
 - All Jobs **MUST** extend from `App\Ship\Parents\Jobs\Job`.
 - A Container **MAY** have more than one Job.
 
-### Folder Structure
+## Folder Structure
 
 ```
 app

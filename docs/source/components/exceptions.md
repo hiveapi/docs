@@ -106,8 +106,9 @@ class AwesomeExceptionWithCustomData extends Exception
 
 throw new AccountFailedException();
 ```
-#### Usage
-##### With Log for Debugging:
+
+## Usage
+### With Log for Debugging:
 
 ```php
 <?php
@@ -115,7 +116,7 @@ throw new AccountFailedException();
 throw (new AccountFailedException())->debug($e); // debug() accepts string or \Exception instance
 ```
 
-##### Overriding the default `message`:
+### Overriding the default `message`:
 
 ```php
 <?php
@@ -123,7 +124,7 @@ throw (new AccountFailedException())->debug($e); // debug() accepts string or \E
 throw new AccountFailedException('I am the message to be displayed for the user');
 ```
 
-##### Overwriting pre-set Custom Data
+### Overwriting pre-set Custom Data
 
 ```php
 <?php

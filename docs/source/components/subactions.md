@@ -18,7 +18,7 @@ app
                 ...
 ```
 
-### Code Sample
+## Code Sample
 
 `ValidateAddressSubAction`
 

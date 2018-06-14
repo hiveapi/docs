@@ -91,16 +91,16 @@ patterns, HiveApi also supports the MVC architecture. That is 97% compatible wit
 
 Below you will learn how you can build your API on top of HiveApi, using your previous knowledge of the Laravel framework.
 
-#### Difference between Standard MVC and HiveApi MVC
+### Difference between Standard MVC and HiveApi MVC
 
 The Porto architecture, does not replace the MVC architecture, but rather extends it. So `Models`, `Views`, `Routes`
 and `Controllers` still exist, but in different places with a strict set of responsibilities for each component.
 
-#### Setup an HiveApi MVC Project
+### Setup an HiveApi MVC Project
 
-##### 1) First get a fresh version of HiveApi
+#### 1) First get a fresh version of HiveApi
 
-##### 2) Create the Application
+#### 2) Create the Application
 
 If you open `app/Containers/` you will see a list of containers, whereas each container provide some features for you. 
 However, you don't need to modify them, whether you are using the Porto or MVC architecture. So forget about all these 
@@ -110,7 +110,7 @@ All we need is to create a new folder (i.e., a new `Container`) called `Applicat
 This is an alternative to the `app` folder on the root of the Laravel project. This folder will hold all your `Models`, 
 `Views`, `Routes`, `Controllers` files, as you know it from a regular Laravel project.
 
-##### 3) Create route file
+#### 3) Create route file
 
 In Laravel 5.6, the `Route` files live in the `routes/` folder on the root of the project. But in HiveApi MVC, the routes 
 files should live in:
@@ -143,7 +143,7 @@ Route::get('/', function () {
 });
 ```
 
-##### 4) Create Controller
+#### 4) Create Controller
 
 In Laravel 5.6, the `Controller` classes live in the `app/Http/Controllers/` folder. But in HiveApi MVC, the `Controller` 
 classes should live in:
@@ -151,7 +151,7 @@ classes should live in:
 - `app/Containers/Application/UI/API/Controllers/Controller.php` (to handle API Routes) and **MUST** extend from `App\Ship\Parents\Controllers\ApiController`
 - `app/Containers/Application/UI/WEB/Controllers/Controller.php` (to handle WEB Routes) and **MUST** extend from `App\Ship\Parents\Controllers\WebController`
 
-##### 5) Create Models
+#### 5) Create Models
 
 In Laravel 5.6, the `Model` classes live in the root of the `app/` folder. But in HiveApi MVC, the `Model` classes should 
 live in `app/Containers/Application/Models`.
@@ -161,19 +161,19 @@ All model **MUST** `extend` from `App\Ship\Parents\Models\Model`.
 > Note the `User` Model should remain in the `User` Container (`app/Containers/User/Models/User.php`), to keep all the 
 features working without any modifications.
 
-##### 6) Create Views
+#### 6) Create Views
 
 In Laravel 5.6, the `View` files live in the `resources/views/` folder. In HiveApi MVC, the `View` files can live in that 
 same directory or/and in this container folder `app/Containers/Application/UI/WEB/Views/`.
 
-##### 7) Create Transformers
+#### 7) Create Transformers
 
 In Laravel 5.6, the `Transformer` classes live in the `app/Transformers/` folder. But in HiveApi MVC, the `Transformer`
 classes should live in `app/Containers/Application/UI/API/Transformers/`.
 
 Transformers, in turn, **MUST** extend from `App\Ship\Parents\Transformers\Transformer`.
 
-##### 8) Create Service Providers
+#### 8) Create Service Providers
 
 In Laravel 5.6, the `Service Provider` classes live in the `app/Providers/` folder. But in Hiveapi MVC, the `Service 
 Provider` classes can live in `app/Containers/Application/Providers/`. You can, however, put them anywhere else.
@@ -182,24 +182,24 @@ If you want the `Service Providers` to be automatically loaded (without having t
 file), rename your file to `MainServiceProvider.php` (full path `app/Containers/Application/Providers/MainServiceProvider.php`). 
 Otherwise you can create `Service Providers` anywhere and register them manually in Laravels `app.php` configuration file.
 
-##### 9) Create Migrations
+#### 9) Create Migrations
 
 In Laravel 5.6, the `Migration` classes live in the `database/migrations/` folder on the root of the project. In HiveApi 
 MVC, the `Migration` classes can live in that same directory or/and in this container folder 
 `app/Containers/Application/Data/Migrations/`.
 
-##### 10) Create Seeds
+#### 10) Create Seeds
 
 In Laravel 5.6, the `Database Seeder` files live in the `database/migrations/` folder on the root of the project. In 
 HiveApi MVC, the `Database Seeder` files can live in that same directory or/and in this container folder 
 `app/Containers/Application/Data/Seeders/`.
 
-##### More Classes
+#### More Classes
 
 All other class types work the same way, you can refer to the documentation for where to place them and what they should 
 extend. For more details you can always get in touch with us on **Slack**.
 
-#### How to use HiveApi features
+### How to use HiveApi features
 
 HiveApi features are all provided as `Actions` & `Tasks` classes. 
 

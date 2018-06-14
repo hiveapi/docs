@@ -20,7 +20,7 @@ app
                     ...
 ```
 
-### Code Samples
+## Code Samples
 
 ```php
 <?php
@@ -34,7 +34,7 @@ $factory->define(App\Containers\User\Models\User::class, function (Faker\Generat
 });
 ```
 
-#### Calling the Factory from a Test Class
+### Calling the Factory from a Test Class
 
 ```php
 <?php
@@ -43,7 +43,7 @@ $factory->define(App\Containers\User\Models\User::class, function (Faker\Generat
 factory(User::class, 4)->create();
 ```
 
-#### Example with Relationships
+### Example with Relationships
 
 ```php
 <?php
@@ -60,7 +60,7 @@ $rewards = factory(Reward::class, 3)->make()->each(function ($reward) use ($coun
 
 Use make instance of `create()` and pass any data you want, then `save()` after establishing the relationship.
 
-#### Usage while overriding some values
+### Usage while overriding some values
 
 ```php
 <?php

@@ -84,7 +84,7 @@ in turn, may tell the server by adding additional query parameter, for example `
 
 For more details read the `Relationships` section in the [Query Parameters](./../features/query-parameters) page.
 
-### Change the default Response payload:
+## Change the default Response payload:
 
 By default, HiveApi returns the data by applying the `DataArray` Fractal Serializer (`League\Fractal\Serializer\DataArraySerializer`). 
 To change this behaviour, you can adapt your `.env` file accordingly:
@@ -125,12 +125,12 @@ If no `$resourceKey` is defined at `Model` level, the lower-cased, pluralized `S
 
 By default the `object` keyword is used as a resource key for each response, and is manually defined in each transformer, 
 
-## Error Responses formats
+## Error Responses Formats
 
 Visit each feature, example the Authentication and there you will see how an unauthenticated response looks like, same 
 for Authorization, Validation and so on.
 
-## Building a Responses from the Controller:
+## Building a Responses from the Controller
 
 Checkout the [Controller Response Builder Helper functions](./../components/controllers) for more information on this 
 topic.

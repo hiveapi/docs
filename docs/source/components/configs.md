@@ -14,7 +14,7 @@ by the composer file of the container).
 too generic then it can be placed on the Ship layer.
 - Container can have as many config files as they need.
 
-### Rules
+## Rules
 
 - When publishing a third-party package config file you **SHOULD** move it manually to its respective container or to 
 the `Ship` Config folder.
@@ -23,7 +23,7 @@ the `Ship` Config folder.
 - The container specific config file, **MUST** have the same name of the container in lower letters and post-fixed 
 with `-container`, to prevent conflicts between third-party packages and container specific packages.
 
-### Folder Structure
+## Folder Structure
 ```shell
 app
     Containers

@@ -162,7 +162,7 @@ We will see how to use both tools and you can pick one, or you can use other opt
 > instead of `.dev`, however, you may change to `.localhost`, `.test`, or whatever suits your needs.
 
 <a name="Dev-Env-Opt-A"></a>
-### A.1) Using Docker (with Laradock)
+### B.1) Using Docker (with Laradock)
 
 `Laradock` is a Docker PHP development environment. It facilitate running PHP Apps on Docker.
 
@@ -208,7 +208,7 @@ in your the server config file, is set to the following `hive.local api.hive.loc
 forget to set your **root** or **DocumentRoot** to the public directory inside hive (i.e., `hive/public`).
 
 <a name="Dev-Env-Opt-B"></a>
-### A.2) Using Vagrant (with Laravel Homestead)
+### B.2) Using Vagrant (with Laravel Homestead)
 
 1) Configure Homestead:
 
@@ -277,7 +277,7 @@ homestead up --provision
 try running this command `homestead halt && homestead up --provision`.*
 
 <a name="Dev-Env-Opt-C"></a>
-### A.3) Using something else
+### B.3) Using something else
 
 If you're not into virtualization solutions, you can setup your environment directly on your machine. Check the 
 [software requirements list](./../getting-started/requirements).
