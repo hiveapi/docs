@@ -38,4 +38,4 @@ trans('welcome::messages.headline.title');
 where `welcome` is the name of the container to search for the localization file, `messages` is the actual file to search for,
 and `headline.title` is the localization key to be resolved within this file.
 
-For more info about the localization checkout the [Localization](./../features/localization) page.
+For more info about the localization checkout the [Localization](./../features/localization.html) page.

@@ -70,4 +70,4 @@ App::make(\Illuminate\Contracts\Bus\Dispatcher\Dispatcher::class)->dispatch(new 
 
 ### Execute Jobs
 
-For running your Jobs checkout the [Tasks Queuing](./../miscellaneous/tasks-queuing) page.
+For running your Jobs checkout the [Tasks Queuing](./../miscellaneous/tasks-queuing.html) page.

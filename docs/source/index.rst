@@ -7,6 +7,7 @@ Getting Started:
 ****************
 
 .. toctree::
+   :caption: Getting Started
    :maxdepth: 2
    
    getting-started/requirements
@@ -22,6 +23,7 @@ Core Components:
 ****************
 
 .. toctree::
+   :caption: Core Components
    :maxdepth: 2
 
    components/actions
@@ -67,9 +69,16 @@ Features:
 *********
 
 .. toctree::
+   :caption: Features
    :maxdepth: 2
 
+   features/cache
+   features/default-endpoints
    features/etag
+   features/generators
+   features/hash-id
+   features/pagination
+   features/versioning
 
 
 *****
@@ -81,7 +90,6 @@ Misc:
    :maxdepth: 2
 
    miscellaneous/magical-call
-
 
 Indices and tables
 ==================

@@ -131,7 +131,7 @@ Behind the scene `hive:docs` executes a command like this
 apidoc -c app/Containers/Documentation/ApiDocJs/public -f public.php -i app -o public/api/documentation
 ```
 
-See the [API Docs Generator](./../features/api-docs-generator) page for more details.
+See the [API Docs Generator](./../features/api-docs-generator.html) page for more details.
 
 ### 5) Tests Setup
 
@@ -280,7 +280,7 @@ try running this command `homestead halt && homestead up --provision`.*
 ### B.3) Using something else
 
 If you're not into virtualization solutions, you can setup your environment directly on your machine. Check the 
-[software requirements list](./../getting-started/requirements).
+[software requirements list](./../getting-started/requirements.html).
 
 <a name="Play"></a>
 ## C) Play

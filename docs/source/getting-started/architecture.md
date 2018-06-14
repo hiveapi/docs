@@ -54,7 +54,7 @@ In order to extend your application with new features, you can call follow vario
 Call the command `php artisan hive:generate:container` from the command line. A wizard will guide you through the 
 process of creating the most important aspects.
 
-Refer to the [Code Generator](./../features/code-generator) page for more details.
+Refer to the [Code Generator](./../features/code-generator.html) page for more details.
 
 <a name="manual-new-container"></a>
 **Option 2) manually:**

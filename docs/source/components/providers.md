@@ -115,7 +115,7 @@ framework and not one specific Container or feature, you can register that servi
 
 ## Laravel 5.5 Auto Discovery feature.
 
-This feature is disabled in HiveApi so far. More details can be found [here](./../miscellaneous/faq).
+This feature is disabled in HiveApi so far. More details can be found [here](./../miscellaneous/faq.html).
 
 ## Information about Laravel Service Providers
 
@@ -141,4 +141,4 @@ available through inheritance.
 This rule, however, does not apply to the `RouteServiceProvider` since it is required by HiveApi. This Provider is 
 directly registered by the `HiveApiProvider`.
 
-Check out [how Service Providers are auto-loaded](./../miscellaneous/faq).
+Check out [how Service Providers are auto-loaded](./../miscellaneous/faq.html).

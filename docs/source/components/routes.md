@@ -77,4 +77,4 @@ In all the Web `Routes` files the `$router` variable is an instance of the defau
 
 ## Protecting Endpoints:
 
-Checkout the [Authorization](./../features/authorization) Page.
+Checkout the [Authorization](./../features/authorization.html) Page.

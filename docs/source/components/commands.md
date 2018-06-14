@@ -79,7 +79,7 @@ Artisan::call('hive:welcome');
 
 ### Schedule Commands Execution
 
-To schedule the execution of a Command checkout the [Tasks Scheduling](./../miscellaneous/tasks-scheduling) page.
+To schedule the execution of a Command checkout the [Tasks Scheduling](./../miscellaneous/tasks-scheduling.html) page.
 
 ## Define Consoles Routes
 

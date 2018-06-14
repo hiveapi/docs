@@ -6,7 +6,7 @@ Read the official [Porto SAP Documentation (#Models)](https://github.com/Mahmoud
 
 - All Models **MUST** extend from `App\Ship\Parents\Models\Model`.
 - If the name of a model differs from the Container name you have to set the `$container` attribute in the repository. 
-[More details](./../components/repositories.md) can be found here.
+[More details](./../components/repositories.html) can be found here.
 
 ## Folder Structure
 

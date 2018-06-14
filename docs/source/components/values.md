@@ -57,4 +57,4 @@ class Location extends Value
 ```
 
 Note that these Value objects also need to have a `$resourceKey` if you plan to output them via `Serializers` (e.g., see 
-the [Response](./../getting-started/responses) page for more details).
+the [Response](./../getting-started/responses.html) page for more details).

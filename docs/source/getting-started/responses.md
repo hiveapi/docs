@@ -82,7 +82,7 @@ pagination.
 The `include` field in the response informs the client about relationships that can be include on request. The client, 
 in turn, may tell the server by adding additional query parameter, for example `/users?include=roles`
 
-For more details read the `Relationships` section in the [Query Parameters](./../features/query-parameters) page.
+For more details read the `Relationships` section in the [Query Parameters](./../features/query-parameters.html) page.
 
 ## Change the default Response payload:
 
@@ -98,7 +98,7 @@ Currently, the supported Serializers are
 * `DataArraySerializer`
 * `JsonApiSerializer`
 
-More details can be found at the [Fractal](http://fractal.thephpleague.com/transformers/) website and 
+More details can be found at the [Fractal](http://fractal.thephpleague.com/transformers) website and 
 [Laravel Fractal Wrapper](https://github.com/spatie/laravel-fractal).
 
 In case of returning JSON data (`JsonApiSerializer`), you may also want to check some JSON response standards:
@@ -132,5 +132,5 @@ for Authorization, Validation and so on.
 
 ## Building a Responses from the Controller
 
-Checkout the [Controller Response Builder Helper functions](./../components/controllers) for more information on this 
+Checkout the [Controller Response Builder Helper functions](./../components/controllers.html) for more information on this 
 topic.

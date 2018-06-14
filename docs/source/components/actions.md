@@ -50,7 +50,7 @@ class RegisterUserAction extends Action
 > 
 > Instead of passing these parameters `string $email, string $password, string $name, bool $isClient = false` from 
 > place to another over and over, consider using the Transporters classes (simple DTOs "Data Transfer Objects"). For 
-> more details read the [Transporters](./../components/transporters) page.
+> more details read the [Transporters](./../components/transporters.html) page.
 
 Injecting each Task in the constructor and then using it below through its property is really boring and the more 
 Tasks you use the worse it gets. So instead you can use the function `call` to call whichever Task you want and pass 
@@ -58,7 +58,7 @@ any parameters to it.
 
 The Action itself was also called using `Hive::call()` from the Controller, triggering `run()` function.
 
-Refer to the [Magical Call](./../miscellaneous/magical-call) page for more info and examples on how to properly use the 
+Refer to the [Magical Call](./../miscellaneous/magical-call.html) page for more info and examples on how to properly use the 
 `call()` function.
 
 ## Examples

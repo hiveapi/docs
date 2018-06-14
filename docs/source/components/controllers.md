@@ -74,7 +74,7 @@ The second parameter of the `call()` function is an array of the `Action` parame
 data to the Action, it is recommended to pass the `Transporter` object as it should be the place that holds the state 
 of your current request.
 
-Refer to the [Magical Call](./../miscellaneous/magical-call) page for more info and examples on how to use the `call()` 
+Refer to the [Magical Call](./../miscellaneous/magical-call.html) page for more info and examples on how to use the `call()` 
 function.
 
 ### Calling a Controller function from a Route file
