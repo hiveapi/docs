@@ -2,9 +2,7 @@
 HiveApi
 =======
 
-****************
-Getting Started:
-****************
+
 
 .. toctree::
    :caption: Getting Started
@@ -18,33 +16,24 @@ Getting Started:
    getting-started/responses
    getting-started/conventions
 
-****************
-Core Components:
-****************
+
 
 .. toctree::
    :caption: Core Components
    :maxdepth: 2
 
    components/actions
-
    components/configs
    components/controllers
-
    components/migrations
    components/models
-
    components/repositories
    components/routes
-
    components/subactions
    components/tasks
-
+   components/transformers
    components/views
 
-********************
-Optional Components:
-********************
 
 .. toctree::
    :caption: Optional Components
@@ -52,21 +41,20 @@ Optional Components:
 
    components/commands
    components/criteria
-
    components/events
    components/exceptions
+   components/exceptions-formatters
    components/factories
    components/jobs
-
    components/languages
    components/mails
+   components/middlewares
+   components/notifications
    components/providers
    components/seeders
    components/values
 
-*********
-Features:
-*********
+
 
 .. toctree::
    :caption: Features
@@ -77,21 +65,23 @@ Features:
    features/etag
    features/generators
    features/hash-id
+   features/localization
    features/pagination
+   features/profiler
+   features/query-parameter-search
+   features/rate-limiting
+   features/requests-monitor
+   features/system-settings
+   features/validation
    features/versioning
 
 
-*****
-Misc:
-*****
 
 .. toctree::
    :caption: Misc
    :maxdepth: 2
 
    miscellaneous/magical-call
-
-Indices and tables
-==================
-
-* :ref:`search`
+   miscellaneous/task-queuing
+   miscellaneous/task-scheduling
+   miscellaneous/useful-commands

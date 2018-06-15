@@ -1,13 +1,13 @@
 # Pagination
 
-For pagination HiveApi relies on the [L5 Repository Package](https://packagist.org/packages/prettus/l5-repository) and the
-pagination gets applied whenever you use the `paginate` function on any model repository
+For pagination HiveApi relies on the [L5 Repository Package](https://packagist.org/packages/prettus/l5-repository) and 
+the pagination gets applied whenever you use the `paginate` function on any model repository
 
 ## Change the Default Pagination Limit
 
 Open the `.env` file and set a number for `PAGINATION_LIMIT_DEFAULT`:
 
-```env
+```
 PAGINATION_LIMIT_DEFAULT=10
 ```
 
