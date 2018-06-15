@@ -32,6 +32,7 @@ HiveApi
    components/subactions
    components/tasks
    components/transformers
+   components/transporters
    components/views
 
 
@@ -60,6 +61,7 @@ HiveApi
    :caption: Features
    :maxdepth: 2
 
+   features/authorization
    features/cache
    features/default-endpoints
    features/etag
