@@ -84,6 +84,24 @@ class ItemTransformer extends Transformer
     }
 ```
 
+You can even pass a `Transformer` object to the `transform()` method, like so:
+
+```php
+<?php
+
+    public function getAllClients(GetAllUsersRequest $request)
+    {
+        $users = Hive::call(GetAllClientsAction::class);
+        
+        $transformer = new MyCustomUserTransformer(true, 'foo', 4711);
+
+        return $this->transform($users, $transformer);
+    }
+```
+
+The parameters are passed to the `Transformer` via the `__construct()` constructor and can be used to parametrize the 
+actual `transform()` method (e.g., based on specific flags).
+
 <a name="relationships-include"></a>
 
 ## Relationships (Includes)
