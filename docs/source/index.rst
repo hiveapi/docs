@@ -52,6 +52,7 @@ HiveApi
    components/middlewares
    components/notifications
    components/providers
+   components/requests
    components/seeders
    components/values
 
@@ -61,6 +62,7 @@ HiveApi
    :caption: Features
    :maxdepth: 2
 
+   features/authentication
    features/authorization
    features/cache
    features/default-endpoints

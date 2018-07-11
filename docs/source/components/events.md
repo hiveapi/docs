@@ -35,6 +35,32 @@ app
             SomethingBigHappenedEvent.php
 ```
 
+## Enabling Events
+
+Before you can use events you need to add the `EventServiceProvider` to the `MainServiceProvider` of the Ship (if this 
+has not been registered so far). See example below.
+
+```
+<?php
+
+namespace App\Containers\Car\Providers;
+
+class MainServiceProvider extends MainProvider
+{
+
+    /**
+     * Container Service Providers.
+     * @var array
+     */
+    public $serviceProviders = [
+        EventServiceProvider::class,
+    ];
+
+    // ...
+}
+
+```
+
 ## Usage
 
 In Laravel you can create and register events in multiple way. Below is an example of an Event that handles itself. 
@@ -74,6 +100,34 @@ class UserRegisteredEvent extends Event implements ShouldQueue
 
 You will get more benefits creating `Events Listeners` for each Event. To do this you will need to extend this 
 EventsProvider `HiveApi\Core\Abstracts\Providers\EventsProvider`.
+
+Your custom `EventServiceProvider` needs to be registered in the containers `MainServiceProvider` as well.
+
+```
+<?php
+
+namespace App\Containers\Car\Providers;
+
+use App\Ship\Parents\Providers\MainProvider;
+
+/**
+ * Class MainServiceProvider.
+ * The Main Service Provider of this container, it will be automatically registered in the framework.
+ */
+class MainServiceProvider extends MainProvider
+{
+
+    /**
+     * Container Service Providers.
+     * @var array
+     */
+    public $serviceProviders = [
+        EventServiceProvider::class,
+    ];
+    
+    // ...
+}
+```
 
 ### Dispatch Events
 
